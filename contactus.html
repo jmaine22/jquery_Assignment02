@@ -32,6 +32,11 @@
 		  width: 5em;
 		}
 		</style>
+		<script>
+			$( function() {
+			  $( "input[type='radio']" ).checkboxradio();
+			} );
+			</script>
 </head>
 <body>
 	<main class="container">
@@ -53,7 +58,7 @@
 			<img src="images/header.gif" class="scale-with-grid" alt="">
 		</header>
 		
-		<section id="welcome" class="eleven columns">
+		<section id="welcome" class="eleven columns widget">
 			<h4>Contact Us</h4>
 			<form name="contactform" action="http://www.vectacorp.com/vc/scripts/contactus.asp" method="post">
 				<fieldset>
@@ -75,10 +80,10 @@
 			    
 			    <br>
 			    What is your current infrastructure?<br>
-			    <label for="Mac"><input type="radio" name="infrastructure" value="Mac" id="Mac">Mac</label>
-			    <label for="Linux"><input type="radio" name="infrastructure" value="Linux" id="Linux">Linux</label>
-			    <label for="Unix"><input type="radio" name="infrastructure" value="Unix" id="Unix">Unix</label>
-			    <label for="Windows"><input type="radio" name="infrastructure" value="Windows" id="Windows">Windows</label>
+			    <label for="radio-1"><input type="radio" name="radio-1" value="Mac" id="radio-1">Mac</label>
+			    <label for="radio-2"><input type="radio" name="radio-2" value="Linux" id="radio-2">Linux</label>
+			    <label for="radio-3"><input type="radio" name="radio-3" value="Unix" id="radio-3">Unix</label>
+			    <label for="radio-4"><input type="radio" name="radio-4" value="Windows" id="radio-4">Windows</label>
 
 			    <br>
 			    How many employees do you have?
